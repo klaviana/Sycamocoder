@@ -1,2 +1,8 @@
 # Sycamocoder
-A MIDI Vocoder built in ChucK, with easily configurable sonic presets such as the carrier waveform or modulations such as reverb or dry signal output.
+A MIDI Vocoder built in ChucK, with easily configurable sonic presets such as the carrier waveform or modulations such as reverb or window parameters.
+
+The Sycamocoder is a virtual instrument I created primarily with the ChucK audio programming language. You can hear it in action in the attached demo of my own song titled ‘Sycamore Street.’ In this demo, my voice is being used to as the modulator to map formant information to synthesizers within ChucK. However, there are infinite possibilities to be explored both in terms of what audio information you want to be mapped, and what unit generators within ChucK you want to be the recipient of said mapping. 
+
+Initially, I intended to record the song live into ChucK. This is how I typically perform the song live, with the dry signal present in the vocoder.ck file. However, I wanted to take advantage of some of the features that a DAW offers to clean up my signal. I therefore recorded the song into Logic, where I customized EQs to boost the highs remove some muddy mids and lows in my voice, in adddition to compressing it. I then sent the MIDI data to Chuck via my computer’s IAC MIDI port 1, and the audio data to ChucK via Soundflower’s audio bus. This is also a valid method for performing live if your output is coming out unclean or you want to add other effects before sending the information to ChucK. The only disadvantages are an additional 2-3 ms of latency (at least that was how much latency I was detecting) and the added headache of additional routing connections that might not be desirable in a live situation. 
+
+Browse my other projects or learn about me at [laviana.me](https://laviana.me).
